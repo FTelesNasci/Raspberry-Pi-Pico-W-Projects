@@ -3,8 +3,8 @@
 / Descrição: Este código lê a temperatura do sensor e o estado de um botão, enviando os dados para um servidor.
 / Hardware: Raspberry Pi Pico W
 / Bibliotecas: pico-sdk, lwIP, CYW43
-/ Autor: José Adriano
-/ Data de Criação: 01/06/2025
+/ Autor: Felipe Teles do Nascimento
+/ Data de Criação: 15/06/2025
 /----------------------------------------------------------------------------------------------------------------------------------------
 */
 #include <stdio.h>
