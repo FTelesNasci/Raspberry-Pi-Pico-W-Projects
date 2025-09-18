@@ -20,7 +20,7 @@
 
 // ==== Pinos ====
 #define SERVO_PIN    2     // GPIO do servo contínuo (simulado)
-#define BTN_CALIB    5     // Botão de calibração (ativo em nível baixo)
+// #define BTN_CALIB    5     // Botão de calibração (ativo em nível baixo)
 #define BUZZER1_PIN  10    // Buzzer 1
 #define BUZZER2_PIN  27    // Buzzer 2
 
@@ -34,7 +34,7 @@
 
 int main() {
     stdio_init_all();
-
+/*
     // === Botão de calibração ===
     gpio_init(BTN_CALIB);
     gpio_set_dir(BTN_CALIB, GPIO_IN);
@@ -48,6 +48,7 @@ int main() {
     gpio_init(BUZZER2_PIN);
     gpio_set_dir(BUZZER2_PIN, GPIO_OUT);
     gpio_put(BUZZER2_PIN, 0);
+    */
 
     // === Inicializa MPU6050 (I2C0) ===
     mpu6050_setup_i2c();
@@ -80,7 +81,7 @@ int main() {
 
     servo_sim_t servo;
     servo_sim_init(&servo, SERVO_PIN, (float)rotation_time_ms);
-
+/*
     if (!gpio_get(BTN_CALIB)) {
         ssd1306_clear();
         ssd1306_draw_string(20, 24, "Calibrando...");
@@ -102,6 +103,7 @@ int main() {
         ssd1306_show();
         sleep_ms(800);
     }
+        */
 
     float current_angle = 90.0f;  // posição inicial
     bool alert_active = false;
