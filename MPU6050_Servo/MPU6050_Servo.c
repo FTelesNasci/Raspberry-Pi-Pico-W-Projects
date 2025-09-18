@@ -6,8 +6,8 @@
 / inclinação para frente move o servo para 0 graus, inclinação para trás para 90 graus, e inclinação lateral para 180 graus. 
 / Os valores dos ângulos são aproximados pois o servo não guarda a posição.
 / Bibliotecas: pico-sdk, extras (servo_sim, flash_storage, ssd1306, mpu6050).
-/ Autor: José Adriano
-/ Data de Criação: 10/09/2025
+/ Autor: Felipe Teles do Nascimento
+/ Data de Criação: 18/09/2025
 /----------------------------------------------------------------------------------------------------------------------------------------
 */
 #include <stdio.h>
